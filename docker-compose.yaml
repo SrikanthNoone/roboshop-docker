@@ -54,7 +54,7 @@ services:
     networks:
       - roboshop
     environment:
-    - RABBITMQ_DEFAULT_USER=rabbitmq
+    - RABBITMQ_DEFAULT_USER=roboshop
     - RABBITMQ_DEFAULT_PASS=roboshop123
   payment:
     image: payment:v1
