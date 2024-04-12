@@ -15,7 +15,7 @@ services:
     depends_on:
       - mongodb
   redis:
-    image: srikanthnoone/redis:v1
+    image: redis
     container_name: redis
     networks:
       - roboshop
@@ -49,7 +49,7 @@ services:
       - cart
       - mysql
   rabbitmq:
-    image: srikanthnoone/rabbitmq:v1
+    image: rabbitmq
     container_name: rabbitmq
     networks:
       - roboshop
